@@ -2,7 +2,7 @@
 
 [![madewith](https://forthebadge.com/images/badges/made-with-rust.svg)](https://forthebadge.com)
 
-grep but in Rust, because why not.
+grep but in Rust, because why not. Ok not exactly like grep, won't add all the features like regex.
 
 ## Installation
 

@@ -1,6 +1,23 @@
 [package]
 name = "grep-rs"
-version = "1.0.0"
-edition = "2021"
+description = "grep but in Rust"
+version = "2.0.0"
+edition = "2024"
+rust-version = "1.85"
+homepage = "https://github.com/DarkCeptor44/grep-rs"
+repository = "https://github.com/DarkCeptor44/grep-rs"
+readme = "README.md"
+authors = ["DarkCeptor44"]
+license = "GPL-3.0-or-later"
+keywords = ["alternative", "grep"]
+categories = ["command-line-utilities"]
 
 [dependencies]
+clap = { version = "^4.5", features = ["derive"] }
+colored = "^3"
+
+[profile.release]
+lto = true
+codegen-units = 1
+opt-level = "z"
+strip = true
